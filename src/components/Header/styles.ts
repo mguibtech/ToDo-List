@@ -5,11 +5,10 @@ export const Container = styled.View`
     height: 173px;
     background: ${({theme}) => theme.COLORS.GRAY_700};
     
-
     align-items: center;
     justify-content: center;
 `;
 
 export const Logo = styled.Image`
-    
+    width: 132px;
 `;

@@ -1,12 +1,26 @@
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 import { Header } from "../../components/Header";
-import { Container } from "./styles";
+import { InputForm } from "../../components/InputForm";
+import theme from "../../theme";
+import { Container, HeaderContent, TextTaskCreated, TextTaskDone, TextCont } from "./styles";
 
 export function Home(){
     return(
         <Container>
             <Header/>
-            <Text>HOme</Text>
+            <InputForm/>
+            <HeaderContent>
+                <View style={{alignItems: "center", flexDirection:"row"}}>
+                    <TextTaskCreated>Criadas</TextTaskCreated>
+                    <TextCont>0</TextCont>
+                </View>
+                <View style={{alignItems: "center", flexDirection:"row"}}>
+                    <TextTaskDone>Concluídas</TextTaskDone>
+                    <TextCont>0</TextCont>
+                </View>
+                
+                
+            </HeaderContent>
         </Container>
         
     )
