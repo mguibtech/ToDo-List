@@ -1,8 +1,9 @@
 import { Text, View } from "react-native";
 import { Header } from "../../components/Header";
 import { InputForm } from "../../components/InputForm";
+import { TaskItem } from "../../components/TaskItem";
 import theme from "../../theme";
-import { Container, HeaderContent, TextTaskCreated, TextTaskDone, TextCont } from "./styles";
+import { Container, HeaderContent, TextTaskCreated, TextTaskDone, TextCont, Tasks } from "./styles";
 
 export function Home(){
     return(
@@ -17,10 +18,12 @@ export function Home(){
                 <View style={{alignItems: "center", flexDirection:"row"}}>
                     <TextTaskDone>Concluídas</TextTaskDone>
                     <TextCont>0</TextCont>
-                </View>
-                
-                
+                </View>               
             </HeaderContent>
+            <Tasks>
+                <TaskItem/>
+            </Tasks>
+            
         </Container>
         
     )

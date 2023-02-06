@@ -9,6 +9,7 @@ export const Container = styled.View`
 export const HeaderContent =  styled.View`
     flex-direction: row;
     margin-top: 32px;
+    margin-bottom: 20px;
 
     justify-content: space-between;
 
@@ -40,15 +41,7 @@ export const TextCont = styled.Text`
     font-family: ${({theme}) => theme.FONT_FAMILY.BOLD};
 `;
 
-
-// /<Text style={{
-//     height:10,
-//     width:25, 
-//     color:theme.COLORS.GRAY_200, 
-//     fontFamily:theme.FONT_FAMILY.BOLD,
-//     fontSize: theme.FONT_SIZE.MD,
-//     paddingVertical: 2,
-//     paddingHorizontal:8, 
-//     backgroundColor: theme.COLORS.GRAY_400,
-//     marginLeft: 6,
-//  }}>0</Text>
+export const Tasks = styled.View`
+    width: 100%;
+    padding: 0 24px 0 24px;
+`;
